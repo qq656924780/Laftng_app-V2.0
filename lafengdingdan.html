@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	
+	<script src="js/react.js"></script>
+	<script src="js/react-dom.js"></script>
+	<script src="js/browser.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/appC.css" media="screen and (min-width: 310px) and (max-width: 380px)"">
+	<link rel="stylesheet" type="text/css" href="css/appA.css" media="screen and (min-width: 400px) and (max-width: 580px)"">
+	<link rel="stylesheet" type="text/css" href="css/appB.css"  media="screen and (min-width: 600px) and (max-width: 1200px)">
+</head>
+<body style="background-color:#f5f5f5;">
+		<div id="container"></div>
+	 <script type="text/babel">
+		var LafengAppDingdan = React.createClass({
+  render: function() {
+	   return (
+         <div className="app_dingdan">
+         	<ul className="app_uls">
+			<li> <img src="image/lALOafn0js0FNs0C7g_750_1334_03.png" alt=""/>游艇</li>
+			<li>待支付</li>
+			</ul>
+			<div className="app_youting">
+				<img src="image/lALOafn0js0FNs0C7g_750_133403.png" alt=""/>
+				<h2>天宝一号</h2>
+				<p>大鹏游艇会</p>
+				<h3>￥2500</h3>
+			</div>
+			<ul className="app_ulss">
+			<li><span>2016/03/20 18:30 出发</span></li>
+			<li><a href="">立即支付</a></li>
+			</ul>
+         </div>
+	   );
+     }
+  });
+	
+	var LafengAppFeiji = React.createClass({
+
+	render: function() {
+	 return (
+		<div className="app_dingdan">
+         	<ul className="app_uls">
+			<li> <img src="image/lALOafn0js0FNs0C7g_750_133.png" alt=""/>飞机</li>
+			<li>未开始</li>
+			</ul>
+			<div className="app_youting">
+				<div className="app_feiji"> 
+                <h4>北京</h4>
+				<p></p>
+				<hr/>
+				<p></p>
+				<h4 className="forigt">上海</h4>
+				</div>
+				
+				<h3 className="forigt_h3">￥2500</h3>
+			</div>
+			<ul className="app_ulss">
+			<li><span>2016/03/20 18:30 出发</span></li>
+			<li><a href="">查看状态</a></li>
+			</ul>
+         </div>
+
+	 );
+   }
+});
+
+
+  ReactDOM.render(
+  <div>
+	<LafengAppDingdan/>
+	<LafengAppFeiji/>
+  </div>,
+  document.getElementById('container')
+  );
+  </script>
+</body>
+</html>

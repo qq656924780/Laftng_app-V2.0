@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>预定成功</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	
+	<script src="js/react.js"></script>
+	<script src="js/react-dom.js"></script>
+	<script src="js/browser.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/appC.css" media="screen and (min-width: 310px) and (max-width: 380px)"">
+	<link rel="stylesheet" type="text/css" href="css/appA.css" media="screen and (min-width: 400px) and (max-width: 580px)"">
+	<link rel="stylesheet" type="text/css" href="css/appB.css"  media="screen and (min-width: 600px) and (max-width: 1200px)">
+</head>
+<body>
+	<div id="examp"></div>
+
+	<script type="text/babel">
+		var Lafengyuding = React.createClass({
+
+	render: function() {
+	 return (
+		<div className="yuding">
+		 <div className="webapp_yuding">
+      	<img src="image/ic_bookling_success.png" alt="标题图片"  />
+      	<h2>预定成功！</h2>
+      	</div>
+			<p>
+			稍后会有专属客服与您联系，或可拨打我们的客服
+			电话<span>024-88888888888</span>进行咨询，我们会尽最大的努力满足您的要求。
+			</p>
+			<ul className="from_app">
+			  <li><a className="active"  href="###">查看订单</a></li>
+			  <li><a href="###">返回</a></li>
+			</ul>
+		</div>
+	 );
+	}
+});
+
+	ReactDOM.render(
+	<div>
+   <Lafengyuding/>
+    </div>,
+   
+   document.getElementById('examp')
+	);
+	</script>
+</body>
+</html>

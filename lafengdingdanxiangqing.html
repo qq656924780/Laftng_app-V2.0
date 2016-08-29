@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单详情-特惠</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	
+	<script src="js/react.js"></script>
+	<script src="js/react-dom.js"></script>
+	<script src="js/browser.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/appC.css" media="screen and (min-width: 310px) and (max-width: 380px)"">
+	<link rel="stylesheet" type="text/css" href="css/appA.css" media="screen and (min-width: 400px) and (max-width: 580px)"">
+	<link rel="stylesheet" type="text/css" href="css/appB.css"  media="screen and (min-width: 600px) and (max-width: 1200px)">
+</head>
+<body>
+	<div id="container"></div>
+	<script type="text/babel">
+	var LafengxiangqingApp = React.createClass({
+	    render: function() {
+	   return (
+			<div className="app_order">
+				<ul className="app_hangban">
+				  <li>
+                    <p>上海</p>
+					<img src="image/023dingdan_03.png" alt=""/>
+					<p>北京</p>
+				  </li>
+				  </ul>
+				<ul className="app_info">
+					<li className="color">乘客信息</li>
+					<li>张三 <span>18612982263</span></li>
+				</ul>
+				<ol className="app_product">
+    			  <li>产品信息</li>
+    			  <li>机型 <span>挑战者850</span></li>
+    			  <li>出发时间 <span>2016-06-29 12:44:20</span></li>
+    			  <li>座位数 <span>10位</span></li>
+    			  <li>价格 <span className="ft_color">￥2500</span></li>
+    			  <li>预付金 <span className="ft_color">￥100</span></li>
+    			  <li>备注 <p>有两名小孩，请准备好儿童玩具，注意饮食并安装儿童座椅</p></li>
+				</ol>
+				<ul className="app_orderinfo">
+				   <li>订单信息 </li>
+				   <li>订单编号 <span>LF100000123</span></li>
+				   <li>下单时间 <span>2016-06-29 12:44:20</span></li>
+				   <li>订单状态 <span>未支付</span></li>
+				</ul>
+
+				<ul className="app_btn">
+				  <li><a  href="">取消订单</a></li>
+				  <li><a className="active" href="">立即支付</a></li>
+				</ul>
+
+			</div>
+				
+
+	    )
+	   }
+     });
+
+     ReactDOM.render(
+		<div>
+		<LafengxiangqingApp/>
+		</div>,
+		document.getElementById('container')
+     );
+
+	</script>
+</body>
+</html>

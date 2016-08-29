@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>预定失败</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	
+	<script src="js/react.js"></script>
+	<script src="js/react-dom.js"></script>
+	<script src="js/browser.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/appC.css" media="screen and (min-width: 310px) and (max-width: 380px)"">
+	<link rel="stylesheet" type="text/css" href="css/appA.css" media="screen and (min-width: 400px) and (max-width: 580px)"">
+	<link rel="stylesheet" type="text/css" href="css/appB.css"  media="screen and (min-width: 600px) and (max-width: 1200px)">
+</head>
+<body>
+	<div id="examp"></div>
+
+	<script type="text/babel">
+		var Lafengyudingshibai = React.createClass({
+	render: function() {
+	 return (
+		<div className="yuding">
+		 <div className="webapp_yuding">
+      	<img src="image/ic_bookling_fail.png" alt="标题图片"  />
+      	<h2>预定失败！</h2>
+      	</div>
+			
+			<ul className="from_app">
+			  <li><a className="active" href="###">立即支付</a></li>
+			  <li><a href="###">返回</a></li>
+			</ul>
+		</div>
+	 );
+	}
+});
+
+	ReactDOM.render(
+	<div>
+   <Lafengyudingshibai/>
+    </div>,
+   
+   document.getElementById('examp')
+	);
+	</script>
+</body>
+</html>

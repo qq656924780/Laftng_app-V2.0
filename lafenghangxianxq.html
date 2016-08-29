@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>航线详情</title>
+	 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	
+	<script src="js/react.js"></script>
+	<script src="js/react-dom.js"></script>
+	<script src="js/browser.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/appC.css" media="screen and (min-width: 310px) and (max-width: 380px)"">
+	<link rel="stylesheet" type="text/css" href="css/appA.css" media="screen and (min-width: 400px) and (max-width: 580px)"">
+	<link rel="stylesheet" type="text/css" href="css/appB.css"  media="screen and (min-width: 600px) and (max-width: 1200px)">
+</head>
+<body>
+	<div id="rool"></div>
+	 <script type="text/babel">
+		var Lafengapp = React.createClass({
+  render: function() {
+
+    return (
+      <div className="webapp">
+      	<div className="webapp_logo">
+      	<img className="imgs_app" src="image/ic_hangxingxianlu.png" alt="标题图片" width="100%" />
+      	<h3>航行线路：</h3>
+      	</div>
+      	<ul className="webapp_ul">
+			<li><p>第1站</p><span>奥帆中心</span>
+             <div className="app_p"></div>
+			</li>
+			
+			<li><p>第2站</p><span>奥帆中心</span>
+			  <div className="app_p"></div>
+			</li>
+			
+			<li><p>第3站</p><span>奥帆中心</span>
+			  <div className="app_p"></div>
+			</li>
+
+			<li><p>第4站</p><span>奥帆中心</span></li>
+      	</ul>
+      	<ul className="webapp_uls">
+			<li><p>第5站</p><span>奥帆中心</span>
+			  <div className="app_p"></div>
+			</li>
+			
+			<li><p>第6站</p><span>奥帆中心</span>
+			  <div className="app_p"></div>
+			</li>
+			
+			<li><p>第7站</p><span>奥帆中心</span>
+			  <div className="app_p"></div>
+			</li>
+			
+			<li><p>第8站</p><span>奥帆中心</span></li>
+      	</ul>
+      </div>
+    );
+  }
+});
+
+var Lfengappluxian = React.createClass({
+	render: function() {
+	
+	return (
+		<div className="webappluxian">
+		<div className="webapp_logo">
+      	<img className="imgs_app" src="image/ic_xianlujianjie.png" alt="标题图片" width="100%" />
+      	<h3>线路简介：</h3>
+      	</div>
+			<p className="app_text">&nbsp;&nbsp;&nbsp;&nbsp;从青岛奥林匹克国际帆船中心出发，航行至五四广场及音乐广场。此航线可以带你领略青岛最著名的各类地标性建筑，八大关是最能体现青岛“红瓦绿树、碧海蓝天”特点的风景区，“八大关” 的特点，是把公园与庭院融合在一起，到处是郁郁葱葱的树木，四季盛开的鲜花，十条马路的行道树品种各异。
+			</p>
+
+		</div>
+	);
+   }
+});
+
+var Lafengluxiantu = React.createClass({
+	render: function() {
+	 return (
+		<div className="app_luxiantu">
+		 <div className="webapp_logo">
+      	<img className="imgs_app" src="image/ic_xianlutu.png" alt="标题图片" width="100%" />
+      	<h3>线路图：</h3>
+      	</div>
+			<div className="picture">
+			<img src="image/ship_01.png" alt="" width="100%" />
+			</div>
+		</div>
+	 );
+	}
+});
+ReactDOM.render(
+	<div>
+   <Lafengapp/>
+   <Lfengappluxian/>
+   <Lafengluxiantu/>
+    </div>,
+   
+   document.getElementById('rool')
+	);
+
+	 </script>
+</body>
+</html>
